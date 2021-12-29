@@ -2,7 +2,7 @@
 @import "header";
 
 body {
-  background: url("./assets/technology/background-technology-mobile.jpg")
+  background: url("../assets/technology/background-technology-mobile.jpg")
     no-repeat center;
   background-size: cover;
   @include size(100%, auto);
@@ -10,7 +10,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background: url("./assets/technology/background-technology-tablet.jpg")
+    background: url("../assets/technology/background-technology-tablet.jpg")
       no-repeat center;
     background-size: cover;
   }
@@ -18,7 +18,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   body {
-    background: url("./assets/technology/background-technology-desktop.jpg")
+    background: url("../assets/technology/background-technology-desktop.jpg")
       no-repeat center;
     background-size: cover;
   }
