@@ -34,8 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [space tourism](https://christianglenogo.github.io/space-tourism/)
 
 ## My process
 
@@ -70,7 +69,6 @@ I can say that there is still a lot to learn the concept of Fetch API. I'm still
 ### Useful resources
 
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) - This you can read about the Fetch API.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
