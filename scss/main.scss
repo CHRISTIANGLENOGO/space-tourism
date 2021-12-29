@@ -1,0 +1,165 @@
+@import "variable";
+@import "header";
+
+body {
+  background: url("/assets/home/background-home-mobile.jpg") no-repeat center;
+  background-size: cover;
+  @include size(100%, auto);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url("/assets/home/background-home-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url("/assets/home/background-home-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.wrapper {
+  display: block;
+  margin-top: 48px;
+}
+
+.info {
+  width: 320px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 80px;
+
+  h2 {
+    @include fonts($barlow-condensed, $nav-text);
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    color: $lightBlue;
+    margin: auto auto 16px auto;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    @include fonts($bellefair, 80px);
+    line-height: 100px;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  p {
+    @include fonts($barlow, $subheading-2);
+    line-height: 25px;
+    color: $lightBlue;
+  }
+}
+
+.explore {
+  @include flex(flex, center, center);
+  @include size(150px, 150px);
+  border-radius: 50%;
+  background: $white;
+  margin: auto auto 48px auto;
+
+  a {
+    @include fonts($bellefair, 20px);
+    text-decoration: none;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+    color: $black;
+    text-transform: uppercase;
+  }
+}
+
+.explore:hover::after {
+  content: "";
+  width: 230px;
+  height: 230px;
+  background: $white;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  animation: expand 500ms;
+  transition: all 0.5s ease;
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    width: 450px;
+    text-align: center;
+    padding-bottom: 0;
+
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 3.375px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: $heading-1;
+      line-height: 150px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: $nav-text;
+      line-height: 28px;
+    }
+  }
+
+  .explore {
+    @include size(242px, 242px);
+    margin: 156px auto 90px;
+
+    a {
+      font-size: $heading-4;
+      line-height: 37px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .explore:hover::after {
+    content: "";
+    width: 450px;
+    height: 450px;
+  }
+
+  @keyframes expand {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 450px;
+      height: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    display: flex;
+    margin-top: 250px;
+  }
+
+  .info {
+    padding-bottom: 131px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="/css/crew.css">
+</head>
+<body>
+  <header>
+    <nav class="menu__nav">
+      <a id="logo" href="index.html">
+        <img src="/assets/shared/logo.svg" alt="logo">
+      </a>
+      <span id="line"></span>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="index.html"><strong>00</strong> Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="destination.html"><strong>01</strong> Destination</a>
+        </li>
+        <li class="menu__item active">
+          <a href="crew.html"><strong>02</strong> Crew</a>
+        </li>
+        <li class="menu__item">
+          <a href="technology.html"><strong>03</strong> Technology</a>
+        </li>
+      </ul>
+      <div class="menu__btn">
+        <img id="hamburger" src="/assets/shared/icon-hamburger.svg" alt="Hamburger">
+        <img id="close" src="/assets/shared/icon-close.svg" alt="close">
+      </div>
+    </nav> 
+
+    <!-- for mobile nav-->
+    <nav class="mobile__nav">
+      <ul class="mobile__menu">
+        <li class="mobile__menu__item">
+          <a href="index.html"><strong>00</strong> Home</a>
+        </li>
+        <li class="mobile__menu__item">
+          <a href="destination.html"><strong>01</strong> Destination</a>
+        </li>
+        <li class="mobile__menu__item">
+          <a href="crew.html"><strong>02</strong> Crew</a>
+        </li>
+        <li class="mobile__menu__item">
+          <a href="technology.html"><strong>03</strong> Technology</a>
+        </li>
+      </ul>    
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="header">
+      <h1>
+        <strong>02</strong> MEET YOUR CREW
+      </h1>
+    </div>
+    <div class="card">
+      <div class="card__image">
+        <img src="/assets/crew/image-douglas-hurley.png" alt="Douglas Hurley">
+      </div>
+      <div class="card__body">
+        <ul class="card__menu">
+          <li class="card_menu__item crew_active"></li>
+          <li class="card_menu__item"></li>
+          <li class="card_menu__item"></li>
+          <li class="card_menu__item"></li>
+        </ul>
+        <div class="card__crew_info">
+          <h2 class="crew__role">COMMANDER</h2>
+          <h1 class="crew__name">DOUGLAS HURLEY</h1>
+          <p class="crew__bio">
+             Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/main.js"></script>
+  <script src="/js/crew.js"></script>
+</body>
+</html>

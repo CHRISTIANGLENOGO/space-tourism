@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Kumbh+Sans&display=swap");
+
+//Font Size
+$heading-1: 150px;
+$heading-2: 100px;
+$heading-3: 56px;
+$heading-4: 32px;
+$heading-5: 28px;
+$heading-6: 24px;
+$subheading-1: 18px;
+$subheading-2: 14px;
+$nav-text: 16px;
+
+//font style
+$barlow: "Barlow", sans-serif;
+$barlow-condensed: "Barlow Condensed", sans-serif;
+$bellefair: "Bellefair", serif;
+
+//font color
+$white: #ffffff;
+$lightBlue: #d0d6f9;
+$black: #0b0d17;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin fonts($family, $size) {
+  font-family: $family;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $size;
+}
+
+@mixin flex($display, $justify, $align) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

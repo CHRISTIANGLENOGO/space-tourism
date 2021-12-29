@@ -1,0 +1,249 @@
+@import "variable";
+@import "header";
+
+body {
+  background: url("/assets/crew/background-crew-mobile.jpg") no-repeat center;
+  background-size: cover;
+  @include size(100%, auto);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url("/assets/crew/background-crew-tablet.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: url("/assets/crew/background-crew-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+
+.header h1 {
+  @include fonts($barlow-condensed, $nav-text);
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: $white;
+  text-align: center;
+  margin: 24px 0 32px;
+  text-transform: uppercase;
+
+  strong {
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+}
+
+.card__image {
+  @include size(327px, 223px);
+  @include flex(flex, center, center);
+  border-bottom: 1px solid #383b4b;
+  margin: auto auto 32px auto;
+
+  img {
+    width: auto;
+    height: 223px;
+    animation: blink 1000ms;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card__body {
+  width: 327px;
+  margin: auto;
+}
+
+.card__menu {
+  @include size(88px, 10px);
+  @include flex(flex, space-between, center);
+  margin: auto;
+
+  .card_menu__item {
+    list-style: none;
+    @include size(10px, 10px);
+    background-color: $white;
+    mix-blend-mode: normal;
+    opacity: 0.17;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .card_menu__item:hover {
+    opacity: 0.5;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 2px #000000;
+  }
+
+  .crew_active {
+    background-color: $white;
+    opacity: 1;
+  }
+}
+
+.crew__role {
+  @include fonts($bellefair, $nav-text);
+  line-height: 18px;
+  text-align: center;
+  color: $white;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-top: 32px;
+  text-transform: uppercase;
+}
+
+.crew__name {
+  @include fonts($bellefair, $heading-6);
+  line-height: 28px;
+  text-align: center;
+  color: $white;
+  padding: 8px 0 16px;
+  text-transform: uppercase;
+}
+
+.crew__bio {
+  @include fonts($barlow, $subheading-2);
+  line-height: 25px;
+  text-align: center;
+  color: $lightBlue;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 1024px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: left;
+    margin: 40px 0 60px;
+    padding-left: 38.5px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .card__body {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 458px;
+    padding-bottom: 40px;
+  }
+
+  .crew__role {
+    font-size: $heading-6;
+    line-height: 28px;
+    padding-top: 0;
+  }
+
+  .crew__name {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .crew__bio {
+    font-size: $nav-text;
+    line-height: 28px;
+    padding-bottom: 40px;
+  }
+
+  .card__image {
+    @include size(auto, 532px);
+    border: none;
+    margin-bottom: 0;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: $heading-5;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    margin: 76px 0 0;
+    padding-left: 11.45%;
+  }
+
+  .card {
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    position: relative;
+  }
+
+  .card__body {
+    width: 100%;
+    max-height: 621px;
+    padding: 0 0 0 11.45%;
+  }
+
+  .crew__role {
+    font-size: $heading-4;
+    line-height: 37px;
+    text-align: left;
+    padding-top: 154px;
+  }
+
+  .crew__name {
+    font-size: $heading-3;
+    line-height: 64px;
+    text-align: left;
+  }
+
+  .crew__bio {
+    font-size: $subheading-1;
+    line-height: 32px;
+    padding-bottom: 120px;
+    text-align: left;
+    width: 444px;
+  }
+
+  .card__menu {
+    @include size(132px, 15px);
+    margin: 0;
+    padding-bottom: 94px;
+
+    .card_menu__item {
+      @include size(15px, 15px);
+    }
+  }
+
+  .card__image {
+    position: absolute;
+    overflow: visible;
+    bottom: 0;
+    right: 10%;
+    height: auto;
+    margin: 0;
+
+    img {
+      width: auto;
+      height: auto;
+    }
+  }
+}

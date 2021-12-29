@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="/css/technology.css">
+</head>
+<body>
+  <header>
+    <nav class="menu__nav">
+      <a id="logo" href="index.html">
+        <img src="/assets/shared/logo.svg" alt="logo">
+      </a>
+      <span id="line"></span>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="index.html"><strong>00</strong> Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="destination.html"><strong>01</strong> Destination</a>
+        </li>
+        <li class="menu__item">
+          <a href="crew.html"><strong>02</strong> Crew</a>
+        </li>
+        <li class="menu__item active">
+          <a href="technology.html"><strong>03</strong> Technology</a>
+        </li>
+      </ul>
+      <div class="menu__btn">
+        <img id="hamburger" src="/assets/shared/icon-hamburger.svg" alt="Hamburger">
+        <img id="close" src="/assets/shared/icon-close.svg" alt="close">
+      </div>
+    </nav> 
+
+    <!-- for mobile nav-->
+    <nav class="mobile__nav">
+      <ul class="mobile__menu">
+        <li class="mobile__menu__item">
+          <a href="index.html"><strong>00</strong> Home</a>
+        </li>
+        <li class="mobile__menu__item">
+          <a href="destination.html"><strong>01</strong> Destination</a>
+        </li>
+        <li class="mobile__menu__item">
+          <a href="crew.html"><strong>02</strong> Crew</a>
+        </li>
+        <li class="mobile__menu__item">
+          <a href="technology.html"><strong>03</strong> Technology</a>
+        </li>
+      </ul>    
+    </nav>
+  </header>
+  <main class="wrapper">
+    <h1 class="tech_header__text"><strong>03</strong> SPACE LAUNCH 101</h1>
+    <div class="card">
+      <div class="card__image">
+        <picture>
+          <source media="(max-width: 1300px)" srcset="./assets/technology/image-launch-vehicle-landscape.jpg">
+          <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="launch-vehicle">
+        </picture>
+      </div>
+      <div class="card__body">
+        <div class="tech__menu">
+          <ul class="tech_menu__items">
+            <li class="tech_menu__item tech_active">1</li>
+            <li class="tech_menu__item">2</li>
+            <li class="tech_menu__item">3</li>
+          </ul>
+        </div>
+        <div class="tech__info">
+          <h2 class="terminology">The terminology...</h2>
+          <h1 class="tech__name">Launch Vehicle</h1>
+          <p class="tech__description">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/js/main.js"></script>
+  <script src="/js/technology.js"></script>
+</body>
+</html>
